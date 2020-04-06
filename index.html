@@ -1,395 +1,543 @@
 ﻿<!DOCTYPE html>
-    <head>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-        <script src="/Scripts/jquery.debounce-1.0.5.js"></script>
-        <script src="/Scripts/slider.js"></script>
-        <script src="/Scripts/scroll.js"></script>
-        <script src="/Scripts/menu.js"></script>
-        <link href="Style.css" rel="stylesheet" />
-        
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-        <title>Zumbühl & Heggli Vorstadt</title>
-        <meta name="author" content="Yves Zumbühl" />
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        
-    </head>
-    <body>
-        <div id="header">
-            <div class="secNavigation">
-                <a href="index.html" id="titel">
-                    <h1 class="flatTitle">Zumbühl & Heggli Architekten</h1>
-                </a>
-                <p>Zumbühl & Heggli Dipl. Arch. ETH SIA/HTL</br> Neugasse 15 6300 Zug</p>
-                <a id="nav-toggle"><span></span></a>
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="./Scripts/jquery.debounce-1.0.5.js"></script>
+    <script src="./Scripts/slider.js"></script>
+    <script src="./Scripts/scroll.js"></script>
+    <script src="./Scripts/menu.js"></script>
+    <link href="Style.css" rel="stylesheet" />
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Zumbühl & Heggli Vorstadt</title>
+    <meta name="author" content="Yves Zumbühl" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+
+<body>
+    <div id="header">
+        <div class="secNavigation">
+            <a href="index.html" id="titel">
+                <h1 class="flatTitle">Zumbühl & Heggli Architekten</h1>
+            </a>
+            <p>Zumbühl & Heggli Dipl. Arch. ETH SIA/HTL</br> Neugasse 15 6300 Zug</p>
+            <a id="nav-toggle"><span></span></a>
+        </div>
+        <div class="navigation">
+            <a href="#natur" class="active">Natur</a>
+            <a href="#stadt">Stadt</a>
+            <a href="#dorf">Dorf</a>
+            <a href="#land">Land</a>
+            <a href="#vorstadt">Vorstadt</a>
+            <a href="#denkmal">Denkmal</a>
+            <a href="#wettbewerb">Wettbewerb</a>
+            <a href="#team">Team</a>
+            <a href="#footer">Kontakt</a>
+        </div>
+    </div>
+    <div id="content">
+        <div class="category left">
+            <img class="imageDetail"></img>
+            <div class="images">
+                <div class="imagesHolder">
+                    <img src="Pictures/NewProjects/NewProject_K_1_175.jpg"
+                        detailImage="Pictures/NewProjects/NewProject_G_1_360.jpg"
+                        description1="Erneuerung Kollegium St. Michael, Zug"
+                        description2="Planung & Ausführung: 2016 - 2019"
+                        description3="Bauherrschaft: Schulen St. Michael, Zug">
+                </div>
+                <div class="imagesHolder">
+                    <img src="Pictures/NewProjects/NewProject_K_2_175.jpg" class="mittleresBild"
+                        detailImage="Pictures/NewProjects/NewProject_G_2_360.jpg"
+                        description1="Um- und Anbau Haus von Arx, Baar" description2="Planung & Ausführung: 2016 - 2019"
+                        description3="Bauherrschaft: Edith und Michael von Arx">
+
+                </div>
+                <div class="imagesHolder">
+                    <img src="Pictures/NewProjects/NewProject_K_3_175.jpg"
+                        detailImage="Pictures/NewProjects/NewProject_G_3_360.jpg"
+                        description1="Neubau Zweifamilienhaus Sonnegg, Zug" description2="Planung & Ausführung: 2017 - 2019"
+                        description3="Bauherrschaft: Elsener und Zumbühl">
+
+                </div>
+                <div class="imagesHolder">
+                    <img src="Pictures/NewProjects/NewProject_K_4_175.jpg"
+                        detailImage="Pictures/NewProjects/NewProject_G_1_360.jpg"
+                        description1="Erneuerung Kollegium St. Michael, Zug"
+                        description2="Planung & Ausführung: 2016 - 2019"
+                        description3="Bauherrschaft: Schulen St. Michael, Zug">
+
+                </div>
+                <div class="imagesHolder">
+                    <img src="Pictures/NewProjects/NewProject_K_5_175.jpg" class="mittleresBild"
+                        detailImage="Pictures/NewProjects/NewProject_G_2_360.jpg"
+                        description1="Um- und Anbau Haus von Arx, Baar" description2="Planung & Ausführung: 2016 - 2019"
+                        description3="Bauherrschaft: Edith und Michael von Arx">
+
+                </div>
+                <div class="imagesHolder">
+                    <img src="Pictures/NewProjects/NewProject_K_6_175.jpg"
+                        detailImage="Pictures/NewProjects/NewProject_G_3_360.jpg"
+                        description1="Neubau Zweifamilienhaus Sonnegg, Zug" description2="Planung & Ausführung: 2017 - 2019"
+                        description3="Bauherrschaft: Elsener und Zumbühl">
+
+                </div>
             </div>
-            <div class="navigation">
-                <a href="#stadt" class="active">Stadt</a>
-                <a href="#dorf">Dorf</a>
-                <a href="#land">Land</a>
-                <a href="#vorstadt">Vorstadt</a>
-                <a href="#denkmal">Denkmal</a>
-                <a href="#wettbewerb">Wettbewerb</a>
-                <a href="#team">Team</a>
-                <a href="#footer">Kontakt</a>
+            <div class="description">
+                <p>Bauen in den letzten Jahren</p>
+                <p>Ein Gebäude ist auch immer ein Zeitbild</p>
+            </div>
+            <div class="descriptionDetail">
+                <p></p>
+                <p></p>
+                <p>
+                    <p>
             </div>
         </div>
-        <div id="content">
-            <div class="category left">
-                <img class="imageDetail"></img>
-                <div class="images">
-                    <div class="imagesHolder">
-                        <img src="Pictures/Home/Home_K_1_175.jpg" detailImage="Pictures/Home/Home_G_360.jpg"
-                            description1="Seeufergestalltung Zug" description2="1985 - 1994" description3="Bauherrschaft: Stadt Zug">
-    
-                    </div>
-                    <div class="imagesHolder"><img src="Pictures/Home/Home_K_2_175.jpg" class="mittleresBild" detailImage="Pictures/Home/Home_G_360.jpg"
-                            description1="Seeufergestalltung Zug" description2="1985 - 1994" description3="Bauherrschaft: Stadt Zug">
-                        
-                    </div>
-                    <div class="imagesHolder"><img src="Pictures/Home/Home_K_3_175.jpg" detailImage="Pictures/Home/Home_G_360.jpg"
-                            description1="Seeufergestalltung Zug" description2="1985 - 1994" description3="Bauherrschaft: Stadt Zug">
-                        
-                    </div>
-                    <div class="imagesHolder"><img src="Pictures/Home/Home_K_4_175.jpg" detailImage="Pictures/Home/Home_G_360.jpg"
-                            description1="Seeufergestalltung Zug" description2="1985 - 1994" description3="Bauherrschaft: Stadt Zug">
-                        
-                    </div>
-                    <div class="imagesHolder"><img src="Pictures/Home/Home_K_5_175.jpg" class="mittleresBild" detailImage="Pictures/Home/Home_G_360.jpg"
-                            description1="Seeufergestalltung Zug" description2="1985 - 1994" description3="Bauherrschaft: Stadt Zug">
-                        
-                    </div>
-                    <div class="imagesHolder"><img src="Pictures/Home/Home_K_6_175.jpg" detailImage="Pictures/Home/Home_G_360.jpg"
-                            description1="Seeufergestalltung Zug" description2="1985 - 1994" description3="Bauherrschaft: Stadt Zug">
-                        
-                    </div>
-                </div>
-                <div class="description">
-                    <p>Bauen in der Natur</p>
-                    <p>Suche nach Harmonie von Natur und Bauwerk</p>
-                </div>
-                <div class="descriptionDetail">
-                    <p></p>
-                    <p></p>
-                    <p>
-                        <p>
-                </div>
-            </div>
-            <div class="category right" id="stadt">
-                <img class="imageDetail"></img>
-                <div class="images">
-                    <div class="imagesHolder">
-                        <img src="Pictures/Stadt/MandelhofNewK.jpg" detailImage="Pictures/Stadt/MandelhofG.jpg" description1="Neubau Mandelhof Gemeindehaus, Cham"
-                            description2="Planung & Ausführung: 1995- 1998" description3="Bauherrschaft: Einwohnergemeinde Cham"
-                        />
-                    </div>
-                    <div class="imagesHolder">
-                        <img src="Pictures/Stadt/MandelhofNew2K.jpg" detailImage="Pictures/Stadt/MandelhofG.jpg" class="mittleresBild"
-                            description1="Neubau Mandelhof Gemeindehaus, Cham" description2="Planung & Ausführung: 1995- 1998" description3="Bauherrschaft: Einwohnergemeinde Cham"
-                        />
-                    </div>
-                    <div class="imagesHolder">
-                        <img src="Pictures/Stadt/Gartenstrasse1K.jpg" detailImage="Pictures/Stadt/GartenstrasseG.jpg" description1="Umbau Haus Gartenstrasse 2, Zug"
-                            description2="Planung & Ausführung: 2007 - 2009" description3="Bauherrschaft: Falk Immobilien AG" />
-                    </div>
-                    <div class="imagesHolder">
-                        <img src="Pictures/Stadt/MandelhofNew3K.jpg" detailImage="Pictures/Stadt/MandelhofG.jpg" description1="Neubau Mandelhof Gemeindehaus, Cham"
-                            description2="Planung & Ausführung: 1995- 1998" description3="Bauherrschaft: Einwohnergemeinde Cham"
-                        />
-                    </div>
-                    <div class="imagesHolder">
-                        <img src="Pictures/Stadt/MandelhofNew4K.jpg" class="mittleresBild" detailImage="Pictures/Stadt/MandelhofG.jpg"
-                            description1="Neubau Mandelhof Gemeindehaus, Cham" description2="Planung & Ausführung: 1995- 1998" description3="Bauherrschaft: Einwohnergemeinde Cham"
-                        />
-                    </div>
-                    <div class="imagesHolder">
-                        <img src="Pictures/Stadt/Gartenstrasse2K.jpg" detailImage="Pictures/Stadt/GartenstrasseG.jpg" description1="Umbau Haus Gartenstrasse 2, Zug"
-                            description2="Planung & Ausführung: 2007 - 2009" description3="Bauherrschaft: Falk Immobilien AG" />
-                    </div>
-                </div>
-                <div class="description">
-                    <p>Bauen in der Stadt </p>
-                    <p>Strasse und Plätzen ein Gesicht geben</p>
-                </div>
-                <div class="descriptionDetail">
-                    <p></p>
-                    <p></p>
-                    <p>
-                        <p>
-                </div>
-            </div>
-            <div class="category left" id="dorf">
-                <img class="imageDetail"></img>
-                <div class="images">
-                    <div class="imagesHolder">
-                        <img src="Pictures/Dorf/193_KlosterFrauenthal1_K_175.jpg" detailImage="Pictures/Dorf/193_KlosterFrauenthal1_G_360.jpg"
-                            description1="Sanierung Kloster Frauenthal, Hagendorn" description2="Planung &amp; Ausführung: 2016" description3="Bauherrschaft: Kloster Frauenthal">
-                    </div>
-                    <div class="imagesHolder"><img src="Pictures/Dorf/193_KlosterFrauenthal2_K_175.jpg" class="mittleresBild" detailImage="Pictures/Dorf/193_KlosterFrauenthal2_G_360.jpg"
-                            description1="Sanierung Kloster Frauenthal, Hagendorn" description2="Planung &amp; Ausführung: 2016" description3="Bauherrschaft: Kloster Frauenthal">
-                    </div>
-                    <div class="imagesHolder">
-                        <img src="Pictures/Dorf/175_Kreuz_K_175.jpg" detailImage="Pictures/Dorf/175_Kreuz_G_540.jpg"
-                            description1="Umbau und Erweiterung Haus Kreuz, Unterägeri" description2="Planung &amp; Ausführung: 2013 - 2016" description3="Bauherrschaft: Geschwister Iten">
-                    </div>
-                    <div class="imagesHolder"><img src="Pictures/Dorf/Husmatt_Knonau1K.jpg" detailImage="Pictures/Dorf/Husmatt_Knonau2G.jpg"
-                            description1="Wohnüberbauung Husmatt, Knonau" description2="Planung: 2005 - 2015 in Minergie ECO" description3="Bauherrschaft: Baurealit AG">
-                    </div>
-                    <div class="imagesHolder"><img src="Pictures/Dorf/Husmatt_Knonau2K.jpg" class="mittleresBild" detailImage="Pictures/Dorf/Husmatt_Knonau2G.jpg"
-                            description1="Wohnüberbauung Husmatt, Knonau" description2="Planung: 2005 - 2015 in Minergie ECO" description3="Bauherrschaft: Baurealit AG">
-                    </div>
-                    <div class="imagesHolder">
-                        <img src="Pictures/Dorf/Husmatt_Knonau3K.jpg" detailImage="Pictures/Dorf/Husmatt_Knonau2G.jpg" description1="Wohnüberbauung Husmatt, Knonau"
-                            description2="Planung: 2005 - 2015 in Minergie ECO" description3="Bauherrschaft: Baurealit AG">
-                    </div>
-                </div>
-                <div class="description">
-                    <p>Bauen im Dorf </p>
-                    <p>Eigenheiten des Dorfes weiterentwickeln</p>
-                </div>
-                <div class="descriptionDetail">
-                    <p></p>
-                    <p></p>
-                    <p>
-                        <p>
-                </div>
-            </div>
-            <div class="category right" id="land">
-                <img class="imageDetail"></img>
-                <div class="images">
-
-                    <div class="imagesHolder">
-                        <img src="Pictures/Land/Huebscherer_ChamK.jpg" detailImage="Pictures/Land/Huebscherer_ChamG.jpg" description1="Umbau Bauernhaus Hübscher, Cham"
-                            description2="Planung &amp; Ausführung: 2009 - 2011" description3="Bauherrschaft: Familie Hübscher">
-                    </div>
-                    <div class="imagesHolder"><img src="Pictures/Land/Oekihof_Cham1K.jpg" class="mittleresBild" detailImage="Pictures/Land/Oekihof_ChamG.jpg"
-                            description1="Ökihof und Jugendtreff Furenmatt, Cham" description2="Planung &amp; Ausführung: 2005" description3="Bauherrschaft: Einwohnergemeinde Cham">
-                    </div>
-                    <div class="imagesHolder"><img src="Pictures/Land/Oekihof_Cham2K.jpg" detailImage="Pictures/Land/Oekihof_ChamG.jpg"
-                            description1="Ökihof und Jugendtreff Furenmatt, Cham" description2="Planung &amp; Ausführung: 2005" description3="Bauherrschaft: Einwohnergemeinde Cham">
-                    </div>
-                    <div class="imagesHolder"><img src="Pictures/Land/139_Brunegg_K_175.jpg" detailImage="Pictures/Land/BruneggG.jpg" description1="Neubau Restaurant Brunegg, Zug"
-                            description2="Planung &amp; Ausführung: 2010 - 2012" description3="Bauherrschaft: Korporation Zug">
-                    </div>
-                    <div class="imagesHolder"><img src="Pictures/Land/190_Bruderhaus_K_175.jpg" class="mittleresBild" detailImage="Pictures/Land/190_Bruderhaus_G_360.jpg"
-                            description1="Umbau und Erweiterung Bruderhaus, Zug" description2="Planung &amp; Ausführung: 2015 - 2016" description3="Bauherrschaft: Katholische Kirchgemeinde Zug">
-                    </div>
-                    <div class="imagesHolder"><img src="Pictures/Land/Oberwil8K.jpg" detailImage="Pictures/Land/Oberwil8G.jpg" description1="Neubau Wohnhaus in Oberwil, Cham"
-                            description2="Planung &amp; Ausführung: 2001 - 2004" description3="Bauherrschaft: Rupert Heggli">
-                    </div>
-                </div>
-                <div class="description">
-                    <p>Bauen auf dem Land</p>
-                    <p>Landschaft und Gebäude in Einklang bringen</p>
-                </div>
-                <div class="descriptionDetail">
-                    <p></p>
-                    <p></p>
-                    <p><p>
-                </div>
-            </div>
-            <div class="category left" id="vorstadt">
-                <img class="imageDetail"></img>
-                <div class="images">
-                    <div class="imagesHolder">
-                        <img src="Pictures/Vorstadt/Zimmermann_HuenbergK.jpg" detailImage="Pictures/Vorstadt/Zimmermann_HuenenbergG.jpg"
-                            description1="Neubau Haus Zimmermann, Hünenberg" description2="Planung &amp; Ausführung: 2001 - 2003" description3="Bauherrschaft: Familie Zimmermann">
-                    </div>
-                    <div class="imagesHolder"><img src="Pictures/Vorstadt/Frei_BaarK.jpg" class="mittleresBild" detailImage="Pictures/Vorstadt/Frei_BaarG.jpg"
-                            description1="Erneuerung Haus Frei, Baar" description2="Planung &amp; Ausführung: 2012 - 2013" description3="Bauherrschaft: Gregor Frei">
-                    </div>
-                    <div class="imagesHolder"><img src="Pictures/Vorstadt/Goebli1K.jpg" detailImage="Pictures/Vorstadt/GoebliG.jpg" description1="Wohnüberbauung Göbli, Baar"
-                            description2="Planung &amp; Ausführung: 2005 - 2007" description3="Bauherrschaft: Korporation Baar - Dorf">
-                    </div>
-                    <div class="imagesHolder"><img src="Pictures/Vorstadt/GoebliK.jpg" detailImage="Pictures/Vorstadt/GoebliG.jpg" description1="Wohnüberbauung Göbli, Baar"
-                            description2="Planung &amp; Ausführung: 2005 - 2007" description3="Bauherrschaft: Korporation Baar - Dorf">
-                    </div>
-                    <div class="imagesHolder"><img src="Pictures/Vorstadt/ZugerbergstrasseK.jpg" class="mittleresBild" detailImage="Pictures/Vorstadt/Zugerbergstrasse1G.jpg"
-                            description1="Neubau 2 Einfamilienhäusern, Zug" description2="Planung &amp; Ausführung: 1994 - 1995" description3="Bauherrschaft: Pia und Albert Zumbühl">
-                    </div>
-                    <div class="imagesHolder"><img src="Pictures/Vorstadt/Goebli2K.jpg" detailImage="Pictures/Vorstadt/GoebliG.jpg" description1="Wohnüberbauung Göbli, Baar"
-                            description2="Planung &amp; Ausführung: 2005 - 2007" description3="Bauherrschaft: Korporation Baar - Dorf">
-                    </div>
-                </div>
-                <div class="description">
-                    <p>Bauen in der Vorstadt</p>
-                    <p>Individuelle Ansprüche und gesellschaftliche Werte verbinden</p>
-                </div>
-                <div class="descriptionDetail">
-                    <p></p>
-                    <p></p>
-                    <p>
-                        <p>
-                </div>
-            </div>
-            <div class="category right" id="denkmal">
-                <img class="imageDetail"></img>
-                <div class="images">
-                    <div class="imagesHolder">
-                        <img src="Pictures/Denkmal/St_Michael_ZugK.jpg" detailImage="Pictures/Denkmal/St_Michael_ZugG.jpg" description1="Erneuerung Kapelle St. Michael, Zug"
-                            description2="Planung &amp; Ausführung: 2009 - 2010" description3="Bauherrschaft: Schulen St. Michael">
-                    </div>
-                    <div class="imagesHolder"><img src="Pictures/Denkmal/Huebscherer_ChamK.jpg" class="mittleresBild" detailImage="Pictures/Denkmal/Huebscherer_ChamG.jpg"
-                            description1="Umbau Bauernhaus Hübscher, Oberwil" description2="Planung &amp; Ausführung: 2009 - 2011" description3="Bauherrschaft: Familie Hübscher">
-                    </div>
-                    <div class="imagesHolder"><img src="Pictures/Denkmal/Untere_AltstadtK.jpg" detailImage="Pictures/Denkmal/Untere_Altstadt.jpg"
-                            description1="Umbau Unter Altstadt, Zug" description2="Planung &amp; Ausführung: 2005" description3="Bauherrschaft: Josef Bollag">
-                    </div>
-                    <div class="imagesHolder"><img src="Pictures/Denkmal/BauernhausK.jpg" detailImage="Pictures/Denkmal/BauernhausG.jpg"
-                            description1="Erneuerung Bauernhaus, Oberwil" description2="Planung &amp; Ausführung: 1992, 2003, 2015" description3="Bauherrschaft: Familie Heggli">
-                    </div>
-                    <div class="imagesHolder"><img src="Pictures/Denkmal/Huebscherer_Cham1K.jpg" class="mittleresBild" detailImage="Pictures/Denkmal/Huebscherer_ChamG.jpg"
-                            description1="Umbau Bauernhaus Hübscher, Oberwil" description2="Planung &amp; Ausführung: 2009 - 2011" description3="Bauherrschaft: Familie Hübscher">
-                    </div>
-                    <div class="imagesHolder"><img src="Pictures/Denkmal/Huebscherer_Cham2K.jpg" detailImage="Pictures/Denkmal/Huebscherer_ChamG.jpg"
-                            description1="Umbau Bauernhaus Hübscher, Oberwil" description2="Planung &amp; Ausführung: 2009 - 2011" description3="Bauherrschaft: Familie Hübscher">
-                    </div>
-                </div>
-                <div class="description">
-                    <p>Bauen unter Denkmalschutz</p>
-                    <p>Vergangenheit und Zukunft verbinden</p>
-                </div>
-                <div class="descriptionDetail">
-                    <p></p>
-                    <p></p>
-                    <p>
-                        <p>
-                </div>
-            </div>
-            <div class="category left" id="wettbewerb">
-                <img class="imageDetail"></img>
-                <div class="images">
-                    <div class="imagesHolder">
-                        <img src="Pictures/Wettbewerb/Wettbewerb_K_1_175.jpg" detailImage="Pictures/Wettbewerb/Geissweid-HirschenV25_G_360.jpg"
-                            description1="Studienauftrag Geissweid Hirschen" description2="Studie: 2017" description3="Bauherrschaft: Korporation Zug">
-                    </div>
-                    <div class="imagesHolder"><img src="Pictures/Wettbewerb/ImMoos1K.jpg" class="mittleresBild" detailImage="Pictures/Wettbewerb/ImMoosG.jpg"
-                            description1="Wettbewerb Ökihof, Menzingen" description2="Studie: 2013" description3="Bauherrschaft: Gemeinde Menzingen">
-                    </div>
-                    <div class="imagesHolder"><img src="Pictures/Wettbewerb/ImMoos2K.jpg" detailImage="Pictures/Wettbewerb/ImMoosG.jpg"
-                            description1="Wettbewerb Ökihof, Menzingen" description2="Studie: 2013" description3="Bauherrschaft: Gemeinde Menzingen">
-                    </div>
-                    <div class="imagesHolder"><img src="Pictures/Wettbewerb/Wettbewerb_K_4_175.jpg" detailImage="Pictures/Wettbewerb/Geissweid-HirschenV25_G_360.jpg"
-                        description1="Studienauftrag Geissweid Hirschen" description2="Studie: 2017" description3="Bauherrschaft: Korporation Zug">
-                    </div>
-                    <div class="imagesHolder"><img src="Pictures/Wettbewerb/Taennlimoos_K_175.jpg" class="mittleresBild" detailImage="Pictures/Wettbewerb/TaennlimoosG.jpg"
-                        description1="Wettbewerb Entsorgungszentrum, Baar" description2="Wettbewerb: 2008" description3="Bauherrschaft: Risi AG, Baar">
-                    </div>
-                    <div class="imagesHolder"><img src="Pictures/Wettbewerb/LorzeChamK.jpg" detailImage="Pictures/Wettbewerb/LorzeChamG.jpg"
-                        description1="Projektwettbewerb Lorze, Cham" description2="Wettbewerb: 2007" description3="Bauherrschaft: Abt, Baggenstoss">
+        <div class="category right" id="natur">
+            <img class="imageDetail"></img>
+            <div class="images">
+                <div class="imagesHolder">
+                    <img src="Pictures/Home/Home_K_1_175.jpg" detailImage="Pictures/Home/Home_G_360.jpg"
+                        description1="Seeufergestalltung Zug" description2="1985 - 1994"
+                        description3="Bauherrschaft: Stadt Zug">
 
                 </div>
+                <div class="imagesHolder"><img src="Pictures/Home/Home_K_2_175.jpg" class="mittleresBild"
+                        detailImage="Pictures/Home/Home_G_360.jpg" description1="Seeufergestalltung Zug"
+                        description2="1985 - 1994" description3="Bauherrschaft: Stadt Zug">
+
                 </div>
-                <div class="description">
-                    <p>Bauen als Vision</p>
-                    <p>Ideen und Träume verwirklichen</p>
+                <div class="imagesHolder"><img src="Pictures/Home/Home_K_3_175.jpg"
+                        detailImage="Pictures/Home/Home_G_360.jpg" description1="Seeufergestalltung Zug"
+                        description2="1985 - 1994" description3="Bauherrschaft: Stadt Zug">
+
                 </div>
-                <div class="descriptionDetail">
-                    <p></p>
-                    <p></p>
-                    <p>
-                        <p>
+                <div class="imagesHolder"><img src="Pictures/Home/Home_K_4_175.jpg"
+                        detailImage="Pictures/Home/Home_G_360.jpg" description1="Seeufergestalltung Zug"
+                        description2="1985 - 1994" description3="Bauherrschaft: Stadt Zug">
+
+                </div>
+                <div class="imagesHolder"><img src="Pictures/Home/Home_K_5_175.jpg" class="mittleresBild"
+                        detailImage="Pictures/Home/Home_G_360.jpg" description1="Seeufergestalltung Zug"
+                        description2="1985 - 1994" description3="Bauherrschaft: Stadt Zug">
+
+                </div>
+                <div class="imagesHolder"><img src="Pictures/Home/Home_K_6_175.jpg"
+                        detailImage="Pictures/Home/Home_G_360.jpg" description1="Seeufergestalltung Zug"
+                        description2="1985 - 1994" description3="Bauherrschaft: Stadt Zug">
+
                 </div>
             </div>
-            <div class="category right" id="team">
-                <img class="imageDetail"></img>
-                <div class="images">
-                    <div class="imagesHolder">
-                        <img src="Pictures/Team/Team_K_1_360.jpg" detailImage="Pictures/Team/Team_G_1_720.jpg"
-                            description1="Das Team vor einer gradiosen Aussicht" description2="" description3="Alfons Heggli und Carmen Steiger">
+            <div class="description">
+                <p>Bauen in der Natur</p>
+                <p>Suche nach Harmonie von Natur und Bauwerk</p>
+            </div>
+            <div class="descriptionDetail">
+                <p></p>
+                <p></p>
+                <p>
+                    <p>
+            </div>
+        </div>
+        <div class="category left" id="stadt">
+            <img class="imageDetail"></img>
+            <div class="images">
+                <div class="imagesHolder">
+                    <img src="Pictures/Stadt/MandelhofNewK.jpg" detailImage="Pictures/Stadt/MandelhofG.jpg"
+                        description1="Neubau Mandelhof Gemeindehaus, Cham"
+                        description2="Planung & Ausführung: 1995- 1998"
+                        description3="Bauherrschaft: Einwohnergemeinde Cham" />
+                </div>
+                <div class="imagesHolder">
+                    <img src="Pictures/Stadt/MandelhofNew2K.jpg" detailImage="Pictures/Stadt/MandelhofG.jpg"
+                        class="mittleresBild" description1="Neubau Mandelhof Gemeindehaus, Cham"
+                        description2="Planung & Ausführung: 1995- 1998"
+                        description3="Bauherrschaft: Einwohnergemeinde Cham" />
+                </div>
+                <div class="imagesHolder">
+                    <img src="Pictures/Stadt/Gartenstrasse1K.jpg" detailImage="Pictures/Stadt/GartenstrasseG.jpg"
+                        description1="Umbau Haus Gartenstrasse 2, Zug" description2="Planung & Ausführung: 2007 - 2009"
+                        description3="Bauherrschaft: Falk Immobilien AG" />
+                </div>
+                <div class="imagesHolder">
+                    <img src="Pictures/Stadt/MandelhofNew3K.jpg" detailImage="Pictures/Stadt/MandelhofG.jpg"
+                        description1="Neubau Mandelhof Gemeindehaus, Cham"
+                        description2="Planung & Ausführung: 1995- 1998"
+                        description3="Bauherrschaft: Einwohnergemeinde Cham" />
+                </div>
+                <div class="imagesHolder">
+                    <img src="Pictures/Stadt/MandelhofNew4K.jpg" class="mittleresBild"
+                        detailImage="Pictures/Stadt/MandelhofG.jpg" description1="Neubau Mandelhof Gemeindehaus, Cham"
+                        description2="Planung & Ausführung: 1995- 1998"
+                        description3="Bauherrschaft: Einwohnergemeinde Cham" />
+                </div>
+                <div class="imagesHolder">
+                    <img src="Pictures/Stadt/Gartenstrasse2K.jpg" detailImage="Pictures/Stadt/GartenstrasseG.jpg"
+                        description1="Umbau Haus Gartenstrasse 2, Zug" description2="Planung & Ausführung: 2007 - 2009"
+                        description3="Bauherrschaft: Falk Immobilien AG" />
+                </div>
+            </div>
+            <div class="description">
+                <p>Bauen in der Stadt </p>
+                <p>Strasse und Plätzen ein Gesicht geben</p>
+            </div>
+            <div class="descriptionDetail">
+                <p></p>
+                <p></p>
+                <p>
+                    <p>
+            </div>
+        </div>
+        <div class="category right" id="dorf">
+            <img class="imageDetail"></img>
+            <div class="images">
+                <div class="imagesHolder">
+                    <img src="Pictures/Dorf/193_KlosterFrauenthal1_K_175.jpg"
+                        detailImage="Pictures/Dorf/193_KlosterFrauenthal1_G_360.jpg"
+                        description1="Sanierung Kloster Frauenthal, Hagendorn"
+                        description2="Planung &amp; Ausführung: 2016" description3="Bauherrschaft: Kloster Frauenthal">
+                </div>
+                <div class="imagesHolder"><img src="Pictures/Dorf/193_KlosterFrauenthal2_K_175.jpg"
+                        class="mittleresBild" detailImage="Pictures/Dorf/193_KlosterFrauenthal2_G_360.jpg"
+                        description1="Sanierung Kloster Frauenthal, Hagendorn"
+                        description2="Planung &amp; Ausführung: 2016" description3="Bauherrschaft: Kloster Frauenthal">
+                </div>
+                <div class="imagesHolder">
+                    <img src="Pictures/Dorf/175_Kreuz_K_175.jpg" detailImage="Pictures/Dorf/175_Kreuz_G_540.jpg"
+                        description1="Umbau und Erweiterung Haus Kreuz, Unterägeri"
+                        description2="Planung &amp; Ausführung: 2013 - 2016"
+                        description3="Bauherrschaft: Geschwister Iten">
+                </div>
+                <div class="imagesHolder"><img src="Pictures/Dorf/Husmatt_Knonau1K.jpg"
+                        detailImage="Pictures/Dorf/Husmatt_Knonau2G.jpg" description1="Wohnüberbauung Husmatt, Knonau"
+                        description2="Planung: 2005 - 2015 in Minergie ECO" description3="Bauherrschaft: Baurealit AG">
+                </div>
+                <div class="imagesHolder"><img src="Pictures/Dorf/Husmatt_Knonau2K.jpg" class="mittleresBild"
+                        detailImage="Pictures/Dorf/Husmatt_Knonau2G.jpg" description1="Wohnüberbauung Husmatt, Knonau"
+                        description2="Planung: 2005 - 2015 in Minergie ECO" description3="Bauherrschaft: Baurealit AG">
+                </div>
+                <div class="imagesHolder">
+                    <img src="Pictures/Dorf/Husmatt_Knonau3K.jpg" detailImage="Pictures/Dorf/Husmatt_Knonau2G.jpg"
+                        description1="Wohnüberbauung Husmatt, Knonau"
+                        description2="Planung: 2005 - 2015 in Minergie ECO" description3="Bauherrschaft: Baurealit AG">
+                </div>
+            </div>
+            <div class="description">
+                <p>Bauen im Dorf </p>
+                <p>Eigenheiten des Dorfes weiterentwickeln</p>
+            </div>
+            <div class="descriptionDetail">
+                <p></p>
+                <p></p>
+                <p>
+                    <p>
+            </div>
+        </div>
+        <div class="category left" id="land">
+            <img class="imageDetail"></img>
+            <div class="images">
 
-                    </div>
-                    <div class="imagesHolder"><img src="Pictures/Team/Team_K_2_360.jpg" class="mittleresBild" detailImage="Pictures/Team/Team_G_2_720.jpg"
-                        description1="Das Team vor einer gradiosen Aussicht" description2="" description3="Flavia Wyss, Barbara Ott und Samuel Violetti">
-                        
-                    </div>
-                    <div class="imagesHolder"><img src="Pictures/Team/Team_K_3_360.jpg" detailImage="Pictures/Team/Team_G_3_720.jpg"
-                        description1="Das Team vor einer gradiosen Aussicht" description2="" description3="Sabine Brandenberg und Urs Zumbühl">
-                        
-                    </div>
-                    <div class="imagesHolder"><img src="Pictures/Team/Team_K_4_360.jpg" detailImage="Pictures/Team/Team_G_4_720.jpg"
-                        description1="Das Team vor einer gradiosen Aussicht" description2="" description3="Alfons Heggli und Carmen Steiger">
-                        
-                    </div>
-                    <div class="imagesHolder"><img src="Pictures/Team/Team_K_5_360.jpg" class="mittleresBild" detailImage="Pictures/Team/Team_G_5_720.jpg"
-                        description1="Das Team vor einer gradiosen Aussicht" description2="" description3="Flavia Wyss, Barbara Ott und Samuel Violetti">
-                        
-                    </div>
-                    <div class="imagesHolder"><img src="Pictures/Team/Team_K_6_360.jpg" detailImage="Pictures/Team/Team_G_6_720.jpg"
-                        description1="Das Team vor einer gradiosen Aussicht" description2="" description3="Sabine Brandenberg und Urs Zumbühl">
-                        
-                    </div>
+                <div class="imagesHolder">
+                    <img src="Pictures/Land/Huebscherer_ChamK.jpg" detailImage="Pictures/Land/Huebscherer_ChamG.jpg"
+                        description1="Umbau Bauernhaus Hübscher, Cham"
+                        description2="Planung &amp; Ausführung: 2009 - 2011"
+                        description3="Bauherrschaft: Familie Hübscher">
                 </div>
-                <div class="description">
-                    <p>Das Team</p>
-                    <p>Wir bauen für Sie</p>
+                <div class="imagesHolder"><img src="Pictures/Land/Oekihof_Cham1K.jpg" class="mittleresBild"
+                        detailImage="Pictures/Land/Oekihof_ChamG.jpg"
+                        description1="Ökihof und Jugendtreff Furenmatt, Cham"
+                        description2="Planung &amp; Ausführung: 2005"
+                        description3="Bauherrschaft: Einwohnergemeinde Cham">
                 </div>
-                <div class="descriptionDetail">
-                    <p></p>
-                    <p></p>
-                    <p><p>
+                <div class="imagesHolder"><img src="Pictures/Land/Oekihof_Cham2K.jpg"
+                        detailImage="Pictures/Land/Oekihof_ChamG.jpg"
+                        description1="Ökihof und Jugendtreff Furenmatt, Cham"
+                        description2="Planung &amp; Ausführung: 2005"
+                        description3="Bauherrschaft: Einwohnergemeinde Cham">
+                </div>
+                <div class="imagesHolder"><img src="Pictures/Land/139_Brunegg_K_175.jpg"
+                        detailImage="Pictures/Land/BruneggG.jpg" description1="Neubau Restaurant Brunegg, Zug"
+                        description2="Planung &amp; Ausführung: 2010 - 2012"
+                        description3="Bauherrschaft: Korporation Zug">
+                </div>
+                <div class="imagesHolder"><img src="Pictures/Land/190_Bruderhaus_K_175.jpg" class="mittleresBild"
+                        detailImage="Pictures/Land/190_Bruderhaus_G_360.jpg"
+                        description1="Umbau und Erweiterung Bruderhaus, Zug"
+                        description2="Planung &amp; Ausführung: 2015 - 2016"
+                        description3="Bauherrschaft: Katholische Kirchgemeinde Zug">
+                </div>
+                <div class="imagesHolder"><img src="Pictures/Land/Oberwil8K.jpg"
+                        detailImage="Pictures/Land/Oberwil8G.jpg" description1="Neubau Wohnhaus in Oberwil, Cham"
+                        description2="Planung &amp; Ausführung: 2001 - 2004"
+                        description3="Bauherrschaft: Rupert Heggli">
+                </div>
+            </div>
+            <div class="description">
+                <p>Bauen auf dem Land</p>
+                <p>Landschaft und Gebäude in Einklang bringen</p>
+            </div>
+            <div class="descriptionDetail">
+                <p></p>
+                <p></p>
+                <p>
+                    <p>
+            </div>
+        </div>
+        <div class="category right" id="vorstadt">
+            <img class="imageDetail"></img>
+            <div class="images">
+                <div class="imagesHolder">
+                    <img src="Pictures/Vorstadt/Zimmermann_HuenbergK.jpg"
+                        detailImage="Pictures/Vorstadt/Zimmermann_HuenenbergG.jpg"
+                        description1="Neubau Haus Zimmermann, Hünenberg"
+                        description2="Planung &amp; Ausführung: 2001 - 2003"
+                        description3="Bauherrschaft: Familie Zimmermann">
+                </div>
+                <div class="imagesHolder"><img src="Pictures/Vorstadt/Frei_BaarK.jpg" class="mittleresBild"
+                        detailImage="Pictures/Vorstadt/Frei_BaarG.jpg" description1="Erneuerung Haus Frei, Baar"
+                        description2="Planung &amp; Ausführung: 2012 - 2013" description3="Bauherrschaft: Gregor Frei">
+                </div>
+                <div class="imagesHolder"><img src="Pictures/Vorstadt/Goebli1K.jpg"
+                        detailImage="Pictures/Vorstadt/GoebliG.jpg" description1="Wohnüberbauung Göbli, Baar"
+                        description2="Planung &amp; Ausführung: 2005 - 2007"
+                        description3="Bauherrschaft: Korporation Baar - Dorf">
+                </div>
+                <div class="imagesHolder"><img src="Pictures/Vorstadt/GoebliK.jpg"
+                        detailImage="Pictures/Vorstadt/GoebliG.jpg" description1="Wohnüberbauung Göbli, Baar"
+                        description2="Planung &amp; Ausführung: 2005 - 2007"
+                        description3="Bauherrschaft: Korporation Baar - Dorf">
+                </div>
+                <div class="imagesHolder"><img src="Pictures/Vorstadt/ZugerbergstrasseK.jpg" class="mittleresBild"
+                        detailImage="Pictures/Vorstadt/Zugerbergstrasse1G.jpg"
+                        description1="Neubau 2 Einfamilienhäusern, Zug"
+                        description2="Planung &amp; Ausführung: 1994 - 1995"
+                        description3="Bauherrschaft: Pia und Albert Zumbühl">
+                </div>
+                <div class="imagesHolder"><img src="Pictures/Vorstadt/Goebli2K.jpg"
+                        detailImage="Pictures/Vorstadt/GoebliG.jpg" description1="Wohnüberbauung Göbli, Baar"
+                        description2="Planung &amp; Ausführung: 2005 - 2007"
+                        description3="Bauherrschaft: Korporation Baar - Dorf">
+                </div>
+            </div>
+            <div class="description">
+                <p>Bauen in der Vorstadt</p>
+                <p>Individuelle Ansprüche und gesellschaftliche Werte verbinden</p>
+            </div>
+            <div class="descriptionDetail">
+                <p></p>
+                <p></p>
+                <p>
+                    <p>
+            </div>
+        </div>
+        <div class="category left" id="denkmal">
+            <img class="imageDetail"></img>
+            <div class="images">
+                <div class="imagesHolder">
+                    <img src="Pictures/Denkmal/St_Michael_ZugK.jpg" detailImage="Pictures/Denkmal/St_Michael_ZugG.jpg"
+                        description1="Erneuerung Kapelle St. Michael, Zug"
+                        description2="Planung &amp; Ausführung: 2009 - 2010"
+                        description3="Bauherrschaft: Schulen St. Michael">
+                </div>
+                <div class="imagesHolder"><img src="Pictures/Denkmal/Huebscherer_ChamK.jpg" class="mittleresBild"
+                        detailImage="Pictures/Denkmal/Huebscherer_ChamG.jpg"
+                        description1="Umbau Bauernhaus Hübscher, Oberwil"
+                        description2="Planung &amp; Ausführung: 2009 - 2011"
+                        description3="Bauherrschaft: Familie Hübscher">
+                </div>
+                <div class="imagesHolder"><img src="Pictures/Denkmal/Untere_AltstadtK.jpg"
+                        detailImage="Pictures/Denkmal/Untere_Altstadt.jpg" description1="Umbau Unter Altstadt, Zug"
+                        description2="Planung &amp; Ausführung: 2005" description3="Bauherrschaft: Josef Bollag">
+                </div>
+                <div class="imagesHolder"><img src="Pictures/Denkmal/BauernhausK.jpg"
+                        detailImage="Pictures/Denkmal/BauernhausG.jpg" description1="Erneuerung Bauernhaus, Oberwil"
+                        description2="Planung &amp; Ausführung: 1992, 2003, 2015"
+                        description3="Bauherrschaft: Familie Heggli">
+                </div>
+                <div class="imagesHolder"><img src="Pictures/Denkmal/Huebscherer_Cham1K.jpg" class="mittleresBild"
+                        detailImage="Pictures/Denkmal/Huebscherer_ChamG.jpg"
+                        description1="Umbau Bauernhaus Hübscher, Oberwil"
+                        description2="Planung &amp; Ausführung: 2009 - 2011"
+                        description3="Bauherrschaft: Familie Hübscher">
+                </div>
+                <div class="imagesHolder"><img src="Pictures/Denkmal/Huebscherer_Cham2K.jpg"
+                        detailImage="Pictures/Denkmal/Huebscherer_ChamG.jpg"
+                        description1="Umbau Bauernhaus Hübscher, Oberwil"
+                        description2="Planung &amp; Ausführung: 2009 - 2011"
+                        description3="Bauherrschaft: Familie Hübscher">
+                </div>
+            </div>
+            <div class="description">
+                <p>Bauen unter Denkmalschutz</p>
+                <p>Vergangenheit und Zukunft verbinden</p>
+            </div>
+            <div class="descriptionDetail">
+                <p></p>
+                <p></p>
+                <p>
+                    <p>
+            </div>
+        </div>
+        <div class="category right" id="wettbewerb">
+            <img class="imageDetail"></img>
+            <div class="images">
+                <div class="imagesHolder">
+                    <img src="Pictures/Wettbewerb/Wettbewerb_K_1_175.jpg"
+                        detailImage="Pictures/Wettbewerb/Geissweid-HirschenV25_G_360.jpg"
+                        description1="Studienauftrag Geissweid Hirschen" description2="Studie: 2017"
+                        description3="Bauherrschaft: Korporation Zug">
+                </div>
+                <div class="imagesHolder"><img src="Pictures/Wettbewerb/ImMoos1K.jpg" class="mittleresBild"
+                        detailImage="Pictures/Wettbewerb/ImMoosG.jpg" description1="Wettbewerb Ökihof, Menzingen"
+                        description2="Studie: 2013" description3="Bauherrschaft: Gemeinde Menzingen">
+                </div>
+                <div class="imagesHolder"><img src="Pictures/Wettbewerb/ImMoos2K.jpg"
+                        detailImage="Pictures/Wettbewerb/ImMoosG.jpg" description1="Wettbewerb Ökihof, Menzingen"
+                        description2="Studie: 2013" description3="Bauherrschaft: Gemeinde Menzingen">
+                </div>
+                <div class="imagesHolder"><img src="Pictures/Wettbewerb/Wettbewerb_K_4_175.jpg"
+                        detailImage="Pictures/Wettbewerb/Geissweid-HirschenV25_G_360.jpg"
+                        description1="Studienauftrag Geissweid Hirschen" description2="Studie: 2017"
+                        description3="Bauherrschaft: Korporation Zug">
+                </div>
+                <div class="imagesHolder"><img src="Pictures/Wettbewerb/Taennlimoos_K_175.jpg" class="mittleresBild"
+                        detailImage="Pictures/Wettbewerb/TaennlimoosG.jpg"
+                        description1="Wettbewerb Entsorgungszentrum, Baar" description2="Wettbewerb: 2008"
+                        description3="Bauherrschaft: Risi AG, Baar">
+                </div>
+                <div class="imagesHolder"><img src="Pictures/Wettbewerb/LorzeChamK.jpg"
+                        detailImage="Pictures/Wettbewerb/LorzeChamG.jpg" description1="Projektwettbewerb Lorze, Cham"
+                        description2="Wettbewerb: 2007" description3="Bauherrschaft: Abt, Baggenstoss">
+
+                </div>
+            </div>
+            <div class="description">
+                <p>Bauen als Vision</p>
+                <p>Ideen und Träume verwirklichen</p>
+            </div>
+            <div class="descriptionDetail">
+                <p></p>
+                <p></p>
+                <p>
+                    <p>
+            </div>
+        </div>
+        <div class="category left" id="team">
+            <img class="imageDetail"></img>
+            <div class="images">
+                <div class="imagesHolder">
+                    <img src="Pictures/Team/Team_K_1_360.jpg" detailImage="Pictures/Team/Team_G_1_720.jpg"
+                        description1="Das Team vor einer gradiosen Aussicht" description2=""
+                        description3="Alfons Heggli und Carmen Steiger">
+
+                </div>
+                <div class="imagesHolder"><img src="Pictures/Team/Team_K_2_360.jpg" class="mittleresBild"
+                        detailImage="Pictures/Team/Team_G_2_720.jpg"
+                        description1="Das Team vor einer gradiosen Aussicht" description2=""
+                        description3="Flavia Wyss, Barbara Ott und Samuel Violetti">
+
+                </div>
+                <div class="imagesHolder"><img src="Pictures/Team/Team_K_3_360.jpg"
+                        detailImage="Pictures/Team/Team_G_3_720.jpg"
+                        description1="Das Team vor einer gradiosen Aussicht" description2=""
+                        description3="Sabine Brandenberg und Urs Zumbühl">
+
+                </div>
+                <div class="imagesHolder"><img src="Pictures/Team/Team_K_4_360.jpg"
+                        detailImage="Pictures/Team/Team_G_4_720.jpg"
+                        description1="Das Team vor einer gradiosen Aussicht" description2=""
+                        description3="Alfons Heggli und Carmen Steiger">
+
+                </div>
+                <div class="imagesHolder"><img src="Pictures/Team/Team_K_5_360.jpg" class="mittleresBild"
+                        detailImage="Pictures/Team/Team_G_5_720.jpg"
+                        description1="Das Team vor einer gradiosen Aussicht" description2=""
+                        description3="Flavia Wyss, Barbara Ott und Samuel Violetti">
+
+                </div>
+                <div class="imagesHolder"><img src="Pictures/Team/Team_K_6_360.jpg"
+                        detailImage="Pictures/Team/Team_G_6_720.jpg"
+                        description1="Das Team vor einer gradiosen Aussicht" description2=""
+                        description3="Sabine Brandenberg und Urs Zumbühl">
+
+                </div>
+            </div>
+            <div class="description">
+                <p>Das Team</p>
+                <p>Wir bauen für Sie</p>
+            </div>
+            <div class="descriptionDetail">
+                <p></p>
+                <p></p>
+                <p>
+                    <p>
+            </div>
+        </div>
+    </div>
+    <div id="footer">
+        <div style="flex-grow: 1">
+            <h2 class="flatTitle">Kontakt</h2>
+            <div>
+                <p>Zumbühl & Heggli</p>
+                <p>Dipl. Arch. ETH SIA/HTL</p>
+                <p>Neugasse 15</p>
+                <p>6300 Zug</p>
+            </div>
+            <div>
+                <p style="font-size: 12px"><a href="mailto:info@zumbuehl-heggli.ch"
+                        target="_top">info@zumbuehl-heggli.ch</a></p>
+                <p>Tel. 041 710 65 55</p>
+            </div>
+
+        </div>
+        <div style="flex-grow: 1">
+            <h2 class="flatTitle">Geschäftsleitung</h2>
+            <div>
+                <p>Urs Zumbühl</p>
+                <p>dipl. Arch. ETH/SIA</p>
+                <p><a href="mailto:uz@zumbuehl-heggli.ch" target="_top">uz@zumbuehl-heggli.ch</a></p>
+            </div>
+            <div>
+                <p>Alfons Heggli</p>
+                <p>dipl. Arch. HTL</p>
+                <p><a href="mailto:ah@zumbuehl-heggli.ch" target="_top">ah@zumbuehl-heggli.ch</a></p>
+            </div>
+        </div>
+        <div style="flex-grow: 1.1" class="employee">
+            <h2 class="flatTitle">Mitarbeiter</h2>
+            <div style="width: 50%; float: left; margin: 0;">
+                <div>
+                    <p>Barbara Ott</p>
+                    <p>Master of Arts in Architecture FHNW</p>
+                    <p><a href="mailto:bo@zumbuehl-heggli.ch" target="_top">bo@zumbuehl-heggli.ch</a></p>
+                </div>
+                <div>
+                    <p>Samuel Violetti</p>
+                    <p>Lernender Zeichner EFZ Fach. Arch.</p>
+                    <p><a href="mailto:sv@zumbuehl-heggli.ch" target="_top">sv@zumbuehl-heggli.ch</a></p>
+                </div>
+                <div>
+                    <p>Carmen Steiger</p>
+                    <p>Architektin BA</p>
+                    <p><a href="mailto:cs@zumbuehl-heggli.ch" target="_top">cs@zumbuehl-heggli.ch</a></p>
+                </div>
+            </div>
+            <div style="width: 50%; float: left; margin: 0;">
+                <div>
+                    <p>Sabine Brandenberg</p>
+                    <p>Architektin BA</p>
+                    <p><a href="mailto:sb@zumbuehl-heggli.ch" target="_top">sb@zumbuehl-heggli.ch</a></p>
+                </div>
+                <div>
+                    <p>Flavia Wyss</p>
+                    <p>Lernende Zeichnerin EFZ Fach. Arch.</p>
+                    <p><a href="mailto:fw@zumbuehl-heggli.ch" target="_top">fw@zumbuehl-heggli.ch</a></p>
                 </div>
             </div>
         </div>
-        <div id="footer">
-            <div style="flex-grow: 1">
-                <h2 class="flatTitle">Kontakt</h2>
-                <div>
-                    <p>Zumbühl & Heggli</p>
-                    <p>Dipl. Arch. ETH SIA/HTL</p>
-                    <p>Neugasse 15</p>
-                    <p>6300 Zug</p>
-                </div>
-                <div>
-                    <p style="font-size: 12px"><a href="mailto:info@zumbuehl-heggli.ch" target="_top">info@zumbuehl-heggli.ch</a></p>
-                    <p>Tel. 041 710 65 55</p>
-                </div>
+    </div>
+</body>
 
-            </div>
-            <div style="flex-grow: 1">
-                <h2 class="flatTitle">Geschäftsleitung</h2>
-                <div>
-                    <p>Urs Zumbühl</p>
-                    <p>dipl. Arch. ETH/SIA</p>
-                    <p><a href="mailto:uz@zumbuehl-heggli.ch" target="_top">uz@zumbuehl-heggli.ch</a></p>
-                </div>
-                <div>
-                    <p>Alfons Heggli</p>
-                    <p>dipl. Arch. HTL</p>
-                    <p><a href="mailto:ah@zumbuehl-heggli.ch" target="_top">ah@zumbuehl-heggli.ch</a></p>
-                </div>
-            </div>
-            <div style="flex-grow: 1.1" class="employee">
-                <h2 class="flatTitle">Mitarbeiter</h2>
-                <div style="width: 50%; float: left; margin: 0;">
-                    <div>
-                        <p>Barbara Ott</p>
-                        <p>Master of Arts in Architecture FHNW</p>
-                        <p><a href="mailto:bo@zumbuehl-heggli.ch" target="_top">bo@zumbuehl-heggli.ch</a></p>
-                    </div>
-                    <div>
-                        <p>Samuel Violetti</p>
-                        <p>Lernender Zeichner EFZ Fach. Arch.</p>
-                        <p><a href="mailto:sv@zumbuehl-heggli.ch" target="_top">sv@zumbuehl-heggli.ch</a></p>        
-                    </div>
-                    <div>
-                        <p>Carmen Steiger</p>
-                        <p>Architektin BA</p>
-                        <p><a href="mailto:cs@zumbuehl-heggli.ch" target="_top">cs@zumbuehl-heggli.ch</a></p>
-                    </div>
-                </div>
-                <div style="width: 50%; float: left; margin: 0;">
-                    <div>
-                        <p>Sabine Brandenberg</p>
-                        <p>Architektin BA</p>
-                        <p><a href="mailto:sb@zumbuehl-heggli.ch" target="_top">sb@zumbuehl-heggli.ch</a></p>
-                    </div>
-                    <div>
-                        <p>Flavia Wyss</p>
-                        <p>Lernende Zeichnerin EFZ Fach. Arch.</p>
-                        <p><a href="mailto:fw@zumbuehl-heggli.ch" target="_top">fw@zumbuehl-heggli.ch</a></p>
-                    </div>
-                </div>                        
-            </div>
-        </div>
-    </body>
 </html>
