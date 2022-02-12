@@ -75,6 +75,7 @@
     object-fit: contain;
     width: 869px;
     height: 396px;
+    cursor: pointer;
 }
 .category .images {
     width: 869px;
@@ -87,7 +88,7 @@
     margin-top: 5px;
     width: 286px;
     height: 192px;
-    cursor:pointer;
+    cursor: pointer;
 }
 
 .category .description, .category .descriptionDetail{
