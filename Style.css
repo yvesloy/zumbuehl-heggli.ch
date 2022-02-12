@@ -8,7 +8,7 @@
     font-family: 'Open Sans', Verdana, Arial, Helvetica, sans-serif;
 }
 #content{
-    max-width: 1200px;
+    max-width: 1279px;
     margin: 0 5%;
 }
 #header {
@@ -66,27 +66,27 @@
 }
 .category{
     height: 400px;
-    margin: 50px 0;
+    margin: 70px 0;
 }
 .category:first-of-type { 
     margin-top: 70px;
 }
 .category .imageDetail {
     object-fit: contain;
-    width: 790px;
-    height: 360px;
+    width: 869px;
+    height: 396px;
 }
 .category .images {
-    width: 790px;
-    height: 360px;
+    width: 869px;
+    height: 396px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
 .category .images img{
     margin-top: 5px;
-    width: 260px;
-    height: 175px;
+    width: 286px;
+    height: 192px;
     cursor:pointer;
 }
 
@@ -191,15 +191,15 @@
 
 @media only screen and (min-width: 1320px) {
     #content{
-        margin: 200px calc((100% - 1200px) / 2 );
+        margin: 200px calc((100% - 1279px) / 2 );
         /*background-color: blue;*/
     }
 }
 @media only screen and (max-width: 1320px) {
     #content{
         /*background-color: green;*/
-        width: 790px;
-        margin: 0 calc((100% - 790px) / 2 );
+        width: 869px;
+        margin: 0 calc((100% - 869px) / 2 );
         margin-top: calc((100vh - 400px) / 2);
     }
     .secNavigation a h1{
