@@ -2,40 +2,19 @@ $(document).ready(function () {
     $(document).on("scroll", $.debounce(onScroll, 100));
 
     $('.navigation a[href^="#"]').on('click', function (e) {
-        
+    
         e.preventDefault();
         var marginTop = 150;
-        if($(document).width() < 1320){
-            marginTop = ($(window).height() - 400) / 2;
+        if($(document).width() < 800){
+            var marginTop = 100;
         }
-        console.log($(this.hash));
+        console.log("Margin Top:", marginTop);
+        console.log("Offset Top:", $(this.hash).offset().top);
         $('html, body').stop().animate({
             'scrollTop': $(this.hash).offset().top - marginTop
         });
 
         onScroll();
-        // $(document).off("scroll");
-
-        // $('.navigation a').each(function () {
-        //     $(this).removeClass('active');
-        // })
-        // $(this).addClass('active');
-        // if(this.hash != '')
-        // var target = this.hash;
-        // $target = $(target);
-        // console.log($target);
-        // var marginTop = 150;
-        // console.log($(document).width());
-        // if($(document).width() < 1320){
-        //     marginTop = ($(window).height() - 400) / 2;
-        // }
-        // console.log($target);
-        // $('html, body').stop().animate({
-        //     'scrollTop': $target.offset().top - marginTop
-        // }, 500, 'swing', function () {
-        //     window.location.hash = target;
-        // });
-        // $(document).on("scroll", $.debounce(onScroll, 100));
     });
 });
 

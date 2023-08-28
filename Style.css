@@ -10,6 +10,7 @@
 #content{
     max-width: 1279px;
     margin: 0 5%;
+    margin-top: 150px;
 }
 #header {
     z-index: 2;
@@ -24,9 +25,6 @@
     margin: 0 !important;
 }
 
-#content{
-    margin-top: 150px;
-}
 .secNavigation{
     justify-content: space-between;
     height: 70px;
@@ -93,7 +91,7 @@
 
 .category .description, .category .descriptionDetail{
     display: flex;
-    height: 355px;
+    height: 396px;
     width: 380px;
     margin: 5px;
     flex-direction: column;
@@ -201,17 +199,20 @@
         /*background-color: green;*/
         width: 869px;
         margin: 0 calc((100% - 869px) / 2 );
-        margin-top: calc((100vh - 400px) / 2);
+        margin-top: 120px;
     }
     .secNavigation a h1{
       font-size: 22px;
     }
+
     .category {
-        margin-bottom: calc((100vh - 400px) / 2) !important;
-    }
+        display: inline-table;
+        margin: 0;
+    } 
+
     .category .description, .category .descriptionDetail{
         padding: 20px; 
-        height: 150px;
+        height: 100px;
         width: calc(100% - 40px);
         justify-content: flex-start;
         text-align: center !important;
@@ -249,6 +250,7 @@
         width: 100%;
         height: auto;
         margin-bottom: 0 !important;
+        margin-top: 0;
         overflow: hidden;
     }
     .category .images{
@@ -264,11 +266,16 @@
         width: 31.99vw;
         height: 21.53vw;
     }
+
+    .category .description {
+        height: 80px;
+    }
     .category .images .mittleresBild{
         margin: 0.5vw 0vw;
     }
     .category .description, .category .descriptionDetail{
         font-size: 16px;
+        height: 80px;
     }
     #footer{
         width: calc(100% - 60px);    
