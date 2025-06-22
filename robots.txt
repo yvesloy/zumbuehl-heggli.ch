@@ -1,0 +1,12 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://zumbuehl-heggli.ch/sitemap.xml
+
+# Block common unwanted paths
+Disallow: /Scripts/
+Disallow: /.git/
+Disallow: /.vscode/
+Disallow: /Neue_Bilder/
+Disallow: /*.afphoto$ 
